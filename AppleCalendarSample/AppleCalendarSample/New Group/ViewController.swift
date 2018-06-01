@@ -72,6 +72,7 @@ extension ViewController: UICollectionViewDataSource {
         }
        
         let date = model.dateForCellAtIndexPath(indexPathItem: indexPath.row)
+        cell.date = model.dateForCellAtIndexPath(indexPathItem: indexPath.row + 1)
         cell.label.text = date.toStr(dateFormat: "d")
         cell.label.textColor = model.checkTheDateInMonth(date: date) ? .black : .gray
         if (model.checkTheDateInMonth(date: date)) {
@@ -93,6 +94,7 @@ extension ViewController: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let cell = collectionView.cellForItem(at: indexPath) as? MonthCell
         print(cell?.label.text)
+        print(cell?.date)
     }
 }
 

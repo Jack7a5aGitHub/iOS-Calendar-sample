@@ -8,81 +8,129 @@ provides-member:
 provides-dynamic-lookup:
 - "label"
 depends-top-level:
+- "Date"
 - "MonthCell"
 - "UICollectionViewCell"
 - "UILabel"
 depends-member:
+- ["So15CALayerDelegateP", "Date"]
 - ["So15CALayerDelegateP", ""]
 - !private ["So15CALayerDelegateP", "init"]
+- ["s7CVarArgP", "Date"]
 - ["s7CVarArgP", ""]
 - !private ["s7CVarArgP", "init"]
+- ["s10ComparableP", "init"]
+- ["s28CustomDebugStringConvertibleP", "Date"]
 - ["s28CustomDebugStringConvertibleP", ""]
-- !private ["s28CustomDebugStringConvertibleP", "init"]
+- ["s28CustomDebugStringConvertibleP", "init"]
+- ["s29CustomPlaygroundQuickLookableP", "init"]
+- ["s17CustomReflectableP", "init"]
+- ["s23CustomStringConvertibleP", "Date"]
 - ["s23CustomStringConvertibleP", ""]
-- !private ["s23CustomStringConvertibleP", "init"]
+- ["s23CustomStringConvertibleP", "init"]
+- ["10Foundation4DateV", "init"]
+- ["s9DecodableP", "init"]
+- ["s9EncodableP", "init"]
+- ["s9EquatableP", "Date"]
 - ["s9EquatableP", ""]
-- !private ["s9EquatableP", "init"]
+- ["s9EquatableP", "init"]
+- ["s8HashableP", "Date"]
 - ["s8HashableP", ""]
-- !private ["s8HashableP", "init"]
+- ["s8HashableP", "init"]
+- ["19AppleCalendarSample9MonthCellC", "Date"]
 - ["19AppleCalendarSample9MonthCellC", "UILabel"]
+- ["19AppleCalendarSample9MonthCellC", "date"]
 - ["19AppleCalendarSample9MonthCellC", "deinit"]
 - ["19AppleCalendarSample9MonthCellC", "init"]
 - ["19AppleCalendarSample9MonthCellC", "label"]
+- ["So8NSCodingP", "Date"]
 - ["So8NSCodingP", ""]
 - !private ["So8NSCodingP", "init"]
+- ["So8NSObjectC", "Date"]
 - ["So8NSObjectC", "UILabel"]
+- ["So8NSObjectC", "date"]
 - ["So8NSObjectC", "init"]
 - ["So8NSObjectC", "label"]
+- ["So16NSObjectProtocolP", "Date"]
 - ["So16NSObjectProtocolP", ""]
 - !private ["So16NSObjectProtocolP", "init"]
+- ["10Foundation20ReferenceConvertibleP", "init"]
+- ["So29UIAccessibilityIdentificationP", "Date"]
 - ["So29UIAccessibilityIdentificationP", ""]
 - !private ["So29UIAccessibilityIdentificationP", "init"]
+- ["So12UIAppearanceP", "Date"]
 - ["So12UIAppearanceP", ""]
 - !private ["So12UIAppearanceP", "init"]
+- ["So21UIAppearanceContainerP", "Date"]
 - ["So21UIAppearanceContainerP", ""]
 - !private ["So21UIAppearanceContainerP", "init"]
+- ["So24UICollectionReusableViewC", "Date"]
 - ["So24UICollectionReusableViewC", "UILabel"]
+- ["So24UICollectionReusableViewC", "date"]
 - ["So24UICollectionReusableViewC", "init"]
 - ["So24UICollectionReusableViewC", "label"]
+- ["So20UICollectionViewCellC", "Date"]
 - ["So20UICollectionViewCellC", "UILabel"]
 - ["So20UICollectionViewCellC", ""]
+- ["So20UICollectionViewCellC", "date"]
 - ["So20UICollectionViewCellC", "init"]
 - ["So20UICollectionViewCellC", "label"]
+- ["So17UICoordinateSpaceP", "Date"]
 - ["So17UICoordinateSpaceP", ""]
 - !private ["So17UICoordinateSpaceP", "init"]
+- ["So13UIDynamicItemP", "Date"]
 - ["So13UIDynamicItemP", ""]
 - !private ["So13UIDynamicItemP", "init"]
+- ["So18UIFocusEnvironmentP", "Date"]
 - ["So18UIFocusEnvironmentP", ""]
 - !private ["So18UIFocusEnvironmentP", "init"]
+- ["So11UIFocusItemP", "Date"]
 - ["So11UIFocusItemP", ""]
 - !private ["So11UIFocusItemP", "init"]
+- ["So30UIPasteConfigurationSupportingP", "Date"]
 - ["So30UIPasteConfigurationSupportingP", ""]
 - !private ["So30UIPasteConfigurationSupportingP", "init"]
+- ["So11UIResponderC", "Date"]
 - ["So11UIResponderC", "UILabel"]
+- ["So11UIResponderC", "date"]
 - ["So11UIResponderC", "init"]
 - ["So11UIResponderC", "label"]
+- ["So30UIResponderStandardEditActionsP", "Date"]
 - ["So30UIResponderStandardEditActionsP", ""]
 - !private ["So30UIResponderStandardEditActionsP", "init"]
+- ["So18UITraitEnvironmentP", "Date"]
 - ["So18UITraitEnvironmentP", ""]
 - !private ["So18UITraitEnvironmentP", "init"]
+- ["So6UIViewC", "Date"]
 - ["So6UIViewC", "UILabel"]
+- ["So6UIViewC", "date"]
 - ["So6UIViewC", "init"]
 - ["So6UIViewC", "label"]
+- ["s37_DefaultCustomPlaygroundQuickLookableP", "Date"]
 - ["s37_DefaultCustomPlaygroundQuickLookableP", ""]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "init"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "Date"]
 - ["10Foundation27_KeyValueCodingAndObservingP", ""]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- ["s21_ObjectiveCBridgeableP", "init"]
 depends-nominal:
 - "So15CALayerDelegateP"
 - "s7CVarArgP"
+- "s10ComparableP"
 - "s28CustomDebugStringConvertibleP"
+- "s29CustomPlaygroundQuickLookableP"
+- "s17CustomReflectableP"
 - "s23CustomStringConvertibleP"
+- "10Foundation4DateV"
+- "s9DecodableP"
+- "s9EncodableP"
 - "s9EquatableP"
 - "s8HashableP"
 - "19AppleCalendarSample9MonthCellC"
 - "So8NSCodingP"
 - "So8NSObjectC"
 - "So16NSObjectProtocolP"
+- "10Foundation20ReferenceConvertibleP"
 - "So29UIAccessibilityIdentificationP"
 - "So12UIAppearanceP"
 - "So21UIAppearanceContainerP"
@@ -99,6 +147,7 @@ depends-nominal:
 - "So6UIViewC"
 - "s37_DefaultCustomPlaygroundQuickLookableP"
 - "10Foundation27_KeyValueCodingAndObservingP"
+- "s21_ObjectiveCBridgeableP"
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotesc"
@@ -124,4 +173,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
-interface-hash: "264f3fa96b810d4a1b241288fb2127ee"
+interface-hash: "fe0a9c2818c24becd464773bf1f82c36"
