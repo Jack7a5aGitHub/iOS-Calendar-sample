@@ -1,0 +1,8 @@
+version: "Apple Swift version 4.1 (swiftlang-902.0.48 clang-902.0.37.1)"
+options: "259a2427956f398f16e7d25d9e9b6049"
+build_time: [1527833024, 247672000]
+inputs:
+  "/Users/jackwong/Desktop/Developer/Model.swift": [1527833023, 0]
+  "/Users/jackwong/Desktop/Developer/Date+prevAndNext.swift": [9223372036, 854775807]
+  "/Users/jackwong/Desktop/Developer/AppleCalendarSample/AppleCalendarSample/ViewController.swift": [1527830595, 0]
+  "/Users/jackwong/Desktop/Developer/AppleCalendarSample/AppleCalendarSample/AppDelegate.swift": [1527830595, 0]
