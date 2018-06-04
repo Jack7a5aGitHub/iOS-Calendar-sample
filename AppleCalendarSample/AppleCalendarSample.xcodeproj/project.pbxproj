@@ -12,13 +12,13 @@
 		0A31FCE820C4C963009D1AEC /* WeekViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A31FCE720C4C963009D1AEC /* WeekViewController.swift */; };
 		0A31FCEA20C4C973009D1AEC /* WeekViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A31FCE920C4C973009D1AEC /* WeekViewController.storyboard */; };
 		0A31FCEC20C4FDDE009D1AEC /* WeekCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A31FCEB20C4FDDD009D1AEC /* WeekCell.swift */; };
+		0A31FCEE20C52158009D1AEC /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A31FCED20C52157009D1AEC /* Model.swift */; };
+		0A31FCF020C52176009D1AEC /* Date+prevAndNext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A31FCEF20C52176009D1AEC /* Date+prevAndNext.swift */; };
+		0A31FCF220C5218B009D1AEC /* MonthCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A31FCF120C5218B009D1AEC /* MonthCell.swift */; };
 		0A57C33720C10FC300660A40 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A57C33620C10FC300660A40 /* AppDelegate.swift */; };
 		0A57C33920C10FC300660A40 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A57C33820C10FC300660A40 /* ViewController.swift */; };
 		0A57C33E20C10FC600660A40 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A57C33D20C10FC600660A40 /* Assets.xcassets */; };
 		0A57C34120C10FC600660A40 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A57C33F20C10FC600660A40 /* LaunchScreen.storyboard */; };
-		0A57C34A20C112B100660A40 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A57C34920C112B100660A40 /* Model.swift */; };
-		0A57C34D20C1193E00660A40 /* Date+prevAndNext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A57C34C20C1193E00660A40 /* Date+prevAndNext.swift */; };
-		0A57C35120C1369D00660A40 /* MonthCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A57C35020C1369D00660A40 /* MonthCell.swift */; };
 		0A84F57220C1377B00D1F41C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A84F57120C1377B00D1F41C /* Main.storyboard */; };
 		0A84F57420C1466A00D1F41C /* Date+toString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A84F57320C1466A00D1F41C /* Date+toString.swift */; };
 /* End PBXBuildFile section */
@@ -29,15 +29,15 @@
 		0A31FCE720C4C963009D1AEC /* WeekViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekViewController.swift; sourceTree = "<group>"; };
 		0A31FCE920C4C973009D1AEC /* WeekViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = WeekViewController.storyboard; sourceTree = "<group>"; };
 		0A31FCEB20C4FDDD009D1AEC /* WeekCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekCell.swift; sourceTree = "<group>"; };
+		0A31FCED20C52157009D1AEC /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		0A31FCEF20C52176009D1AEC /* Date+prevAndNext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+prevAndNext.swift"; sourceTree = "<group>"; };
+		0A31FCF120C5218B009D1AEC /* MonthCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MonthCell.swift; sourceTree = "<group>"; };
 		0A57C33320C10FC300660A40 /* AppleCalendarSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppleCalendarSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A57C33620C10FC300660A40 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0A57C33820C10FC300660A40 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = "../New Group/ViewController.swift"; sourceTree = "<group>"; };
 		0A57C33D20C10FC600660A40 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0A57C34020C10FC600660A40 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0A57C34220C10FC600660A40 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0A57C34920C112B100660A40 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Model.swift; path = ../../../Model.swift; sourceTree = "<group>"; };
-		0A57C34C20C1193E00660A40 /* Date+prevAndNext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Date+prevAndNext.swift"; path = "../../../Date+prevAndNext.swift"; sourceTree = "<group>"; };
-		0A57C35020C1369D00660A40 /* MonthCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MonthCell.swift; path = ../../../MonthCell.swift; sourceTree = "<group>"; };
 		0A84F57120C1377B00D1F41C /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		0A84F57320C1466A00D1F41C /* Date+toString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+toString.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -87,7 +87,7 @@
 		0A57C34820C1128300660A40 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				0A57C34920C112B100660A40 /* Model.swift */,
+				0A31FCED20C52157009D1AEC /* Model.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -95,7 +95,7 @@
 		0A57C34B20C1191000660A40 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
-				0A57C34C20C1193E00660A40 /* Date+prevAndNext.swift */,
+				0A31FCEF20C52176009D1AEC /* Date+prevAndNext.swift */,
 				0A84F57320C1466A00D1F41C /* Date+toString.swift */,
 				0A31FCE320C4C919009D1AEC /* UIStoryboard+Instance.swift */,
 				0A31FCE520C4C937009D1AEC /* NSObject+ClassName.swift */,
@@ -117,7 +117,7 @@
 		0A57C34F20C1368500660A40 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				0A57C35020C1369D00660A40 /* MonthCell.swift */,
+				0A31FCF120C5218B009D1AEC /* MonthCell.swift */,
 				0A31FCEB20C4FDDD009D1AEC /* WeekCell.swift */,
 			);
 			path = View;
@@ -195,14 +195,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A31FCF220C5218B009D1AEC /* MonthCell.swift in Sources */,
+				0A31FCF020C52176009D1AEC /* Date+prevAndNext.swift in Sources */,
 				0A31FCE420C4C919009D1AEC /* UIStoryboard+Instance.swift in Sources */,
-				0A57C35120C1369D00660A40 /* MonthCell.swift in Sources */,
-				0A57C34A20C112B100660A40 /* Model.swift in Sources */,
-				0A57C34D20C1193E00660A40 /* Date+prevAndNext.swift in Sources */,
 				0A84F57420C1466A00D1F41C /* Date+toString.swift in Sources */,
 				0A31FCE620C4C937009D1AEC /* NSObject+ClassName.swift in Sources */,
 				0A31FCE820C4C963009D1AEC /* WeekViewController.swift in Sources */,
 				0A31FCEC20C4FDDE009D1AEC /* WeekCell.swift in Sources */,
+				0A31FCEE20C52158009D1AEC /* Model.swift in Sources */,
 				0A57C33920C10FC300660A40 /* ViewController.swift in Sources */,
 				0A57C33720C10FC300660A40 /* AppDelegate.swift in Sources */,
 			);
