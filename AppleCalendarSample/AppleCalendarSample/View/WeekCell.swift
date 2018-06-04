@@ -11,5 +11,12 @@ import UIKit
 final class WeekCell: UICollectionViewCell {
     
     @IBOutlet weak var dayLabel: UILabel!
-    var date : Date?
+    var date : Date!
+    
+    override var isSelected: Bool {
+        didSet {
+            self.backgroundColor = isSelected ? .black : .clear
+            self.dayLabel.textColor = isSelected ? .white : .black
+        }
+    }
 }

@@ -21,7 +21,8 @@ final class WeekViewController: UIViewController {
     private var dayCount = 0
     private let CellMargin = 2.0
     private let timeArray = ["0:00","1:00","2:00","3:00","4:00","5:00","6:00","7:00","8:00","9:00","10:00","11:00","12:00","13:00","14:00","15:00","16:00","17:00","18:00","19:00","20:00","21:00","22:00","23:00"]
-    
+    private var selectedItem = 0
+    private var onceTime = true
     
     //MARK: -Factory
     class func make(with date: Date) -> WeekViewController {
@@ -43,14 +44,17 @@ final class WeekViewController: UIViewController {
 }
 
 extension WeekViewController {
+    
     private func setupWeekVCModel(){
         model.selectedDate = self.selectedDate
         dayCount = model.calculationNumberOfItems()
         dateLabel.text = self.selectedDate.toStr(dateFormat: "yyyy年M月dd日")
-        print("In Week VC : \(selectedDate)")
-        print("Model selected Date : \(model.selectedDate)")
-        print("Number of Items \(model.calculationNumberOfItems())")
-        print("First Date of Month \(model.firstDateOfMonth(date: self.selectedDate))")
+        print(weekCollectionView.indexPathsForSelectedItems)
+        
+//        print("In Week VC : \(selectedDate)")
+//        print("Model selected Date : \(model.selectedDate)")
+//        print("Number of Items \(model.calculationNumberOfItems())")
+//        print("First Date of Month \(model.firstDateOfMonth(date: self.selectedDate))")
     }
     private func setupWeekCollectionView(){
         weekCollectionView.dataSource = self
@@ -71,7 +75,13 @@ extension WeekViewController: UICollectionViewDelegate{
             return
         }
         dateLabel.text = selectedDay.toStr(dateFormat: "yyyy年M月dd日")
-        print("Tapped \(selectedDay)")
+        print("Tapped \(indexPath.item)")
+        if onceTime {
+            let indexPath = IndexPath(item: selectedItem, section: 0)
+            let selectedCell = collectionView.cellForItem(at: indexPath) as? WeekCell
+            selectedCell?.isSelected = false
+            onceTime = false
+        }
     }
 }
     //MARK: - UICollectionViewDataSource
@@ -83,9 +93,14 @@ extension WeekViewController: UICollectionViewDataSource {
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "weekCell", for: indexPath) as? WeekCell else {
             fatalError()
         }
+      
         let date = model.dateForCellAtIndexPath(date: self.selectedDate,indexPathItem: indexPath.row)
         cell.dayLabel.text = date.toStr(dateFormat: "d")
         cell.date = date
+        if cell.date == selectedDate {
+            cell.isSelected = true
+            selectedItem = indexPath.item
+        }
         
         return cell
     }
@@ -125,6 +140,7 @@ extension WeekViewController: UITableViewDataSource {
             fatalError()
         }
         cell.timeLabel.text = timeArray[indexPath.row]
+        cell.statusLabel.text = selectedDate.toStr(dateFormat: "yyyy/MM/d")
         return cell
     }
 }

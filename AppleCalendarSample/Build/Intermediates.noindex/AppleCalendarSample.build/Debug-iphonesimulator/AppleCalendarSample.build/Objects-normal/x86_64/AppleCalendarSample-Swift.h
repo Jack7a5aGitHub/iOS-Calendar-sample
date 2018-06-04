@@ -211,6 +211,18 @@ SWIFT_CLASS("_TtC19AppleCalendarSample9MonthCell")
 
 
 
+@class UIButton;
+
+SWIFT_CLASS("_TtC19AppleCalendarSample12ScheduleCell")
+@interface ScheduleCell : UITableViewCell
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified timeLabel;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified statusLabel;
+@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified reserveButton;
+- (void)awakeFromNib;
+- (nonnull instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString * _Nullable)reuseIdentifier OBJC_DESIGNATED_INITIALIZER SWIFT_AVAILABILITY(ios,introduced=3.0);
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
 
 
 @class UICollectionView;
@@ -253,6 +265,7 @@ SWIFT_CLASS("_TtC19AppleCalendarSample14ViewController")
 SWIFT_CLASS("_TtC19AppleCalendarSample8WeekCell")
 @interface WeekCell : UICollectionViewCell
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified dayLabel;
+@property (nonatomic, getter=isSelected) BOOL selected;
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
@@ -270,16 +283,27 @@ SWIFT_CLASS("_TtC19AppleCalendarSample18WeekViewController")
 @end
 
 
-@interface WeekViewController (SWIFT_EXTENSION(AppleCalendarSample)) <UICollectionViewDelegate>
+@interface WeekViewController (SWIFT_EXTENSION(AppleCalendarSample)) <UITableViewDelegate>
 @end
 
 
+@interface WeekViewController (SWIFT_EXTENSION(AppleCalendarSample)) <UICollectionViewDelegate>
+- (void)collectionView:(UICollectionView * _Nonnull)collectionView didSelectItemAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
+@end
+
+
+@interface WeekViewController (SWIFT_EXTENSION(AppleCalendarSample)) <UITableViewDataSource>
+- (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
+- (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
+@end
 
 
 @interface WeekViewController (SWIFT_EXTENSION(AppleCalendarSample)) <UICollectionViewDataSource>
 - (NSInteger)collectionView:(UICollectionView * _Nonnull)collectionView numberOfItemsInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
 - (UICollectionViewCell * _Nonnull)collectionView:(UICollectionView * _Nonnull)collectionView cellForItemAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
 @end
+
+
 
 
 @interface WeekViewController (SWIFT_EXTENSION(AppleCalendarSample)) <UICollectionViewDelegateFlowLayout>
