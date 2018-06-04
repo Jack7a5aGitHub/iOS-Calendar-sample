@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+final class ViewController: UIViewController {
     
     //MARK: -IBOutlet
     @IBOutlet weak var dateLabel: UILabel!
@@ -24,6 +24,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         setupModel()
         setupCalendarCollection()
+       
 //        print("Number of Items \(model.calculationNumberOfItems())")
 //        print("check Weekend \(model.checkWeekend(date: Date()))")
 //        print("First Date of Month \(model.firstDateOfMonth())")
@@ -31,6 +32,7 @@ class ViewController: UIViewController {
 //        let yesterday = Date().yesterday
 //        print(yesterday.monthAsString())
     }
+    
     //MARK: IBAction
     
     @IBAction func previousMonth(_ sender: Any) {
@@ -55,7 +57,9 @@ extension ViewController {
         calendarView.delegate = self
     }
     private func setupModel() {
-        model.selectedDate = Date()
+        let jpt = Calendar.current.dateComponents(in: TimeZone(identifier: "Asia/Tokyo")!, from: Date())
+        print("Japan Time: \(jpt)")
+        model.selectedDate = jpt.date!
         dateCount = model.calculationNumberOfItems()
         dateLabel.text = model.selectedDate.toStr(dateFormat: "yyyy/MM")
     }
@@ -92,9 +96,15 @@ extension ViewController: UICollectionViewDataSource {
     //MARK: - UICollectionViewDelegate
 extension ViewController: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        let cell = collectionView.cellForItem(at: indexPath) as? MonthCell
-        print(cell?.label.text)
-        print(cell?.date)
+        guard let cell = collectionView.cellForItem(at: indexPath) as? MonthCell,
+              let selectedDate = cell.date  else {
+            return
+        }
+        
+        print(cell.label.text)
+        print(selectedDate)
+        let weekVC = WeekViewController.make(with: selectedDate)
+        self.navigationController?.pushViewController(weekVC, animated: true)
     }
 }
 

@@ -6,7 +6,7 @@
 	<dict>
 		<key>Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib</key>
 		<data>
-		7E+IsfOQgFIlbU5+9tokrgOeKGw=
+		3caqpno3bzTnOSPQ//EE7mxLPO8=
 		</data>
 		<key>Base.lproj/LaunchScreen.storyboardc/Info.plist</key>
 		<data>
@@ -14,7 +14,7 @@
 		</data>
 		<key>Base.lproj/LaunchScreen.storyboardc/UIViewController-01J-lp-oVM.nib</key>
 		<data>
-		pYw8v26hDS2+3lQNvHoGvXPKeRE=
+		HNzkEsJYFgYk1Cd7LtvcSDCuJC0=
 		</data>
 		<key>Frameworks/libswiftCore.dylib</key>
 		<data>
@@ -74,19 +74,31 @@
 		</data>
 		<key>Main.storyboardc/ChL-pp-xaK-view-hiF-6L-1an.nib</key>
 		<data>
-		ornqSkKpi4Ht9z/EZKk0ptQmBGM=
+		ckOm4M6PpV0EbVTjYV+f2OnJPHw=
 		</data>
 		<key>Main.storyboardc/Info.plist</key>
 		<data>
-		m8pXfsx1r3sUyZ9iNJ3sHj0t6Zg=
+		difQRzH6OJ0rgKYIvgdSAGPwt/I=
 		</data>
-		<key>Main.storyboardc/UIViewController-ChL-pp-xaK.nib</key>
+		<key>Main.storyboardc/UINavigationController-r6c-hl-uPU.nib</key>
 		<data>
-		5qeZrdAr8TVPwsfejZzx5qDuYWU=
+		PpNGtvpV1Dv7rJ5lH6vipE6MmAk=
 		</data>
 		<key>PkgInfo</key>
 		<data>
 		n57qDP4tZfLD1rCS43W0B4LQjzE=
+		</data>
+		<key>WeekViewController.storyboardc/Info.plist</key>
+		<data>
+		se9Re94J3qVm2SUFks284U3iFn8=
+		</data>
+		<key>WeekViewController.storyboardc/N9m-Px-uO7-view-ZhL-Bc-fCL.nib</key>
+		<data>
+		pRVNre7DgXGyWi9LQ0kfUf8xrrA=
+		</data>
+		<key>WeekViewController.storyboardc/WeekViewController.nib</key>
+		<data>
+		mCjPrjWBtqXR5Db6WEyZu1YxNms=
 		</data>
 		<key>libswiftRemoteMirror.dylib</key>
 		<data>
@@ -99,11 +111,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			7E+IsfOQgFIlbU5+9tokrgOeKGw=
+			3caqpno3bzTnOSPQ//EE7mxLPO8=
 			</data>
 			<key>hash2</key>
 			<data>
-			DcS6YAJLNXwMwaDPmnRkZ464YwPBovHAvGs++1ReIxM=
+			Boh61ThD9hFPo4JSAcT8r4moibMF7S3t6xIBGSBc0Qo=
 			</data>
 		</dict>
 		<key>Base.lproj/LaunchScreen.storyboardc/Info.plist</key>
@@ -121,11 +133,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			pYw8v26hDS2+3lQNvHoGvXPKeRE=
+			HNzkEsJYFgYk1Cd7LtvcSDCuJC0=
 			</data>
 			<key>hash2</key>
 			<data>
-			wfgzvJB5/4LueXYRV67Rv5F//NQ7AkFelNh4YB5ul40=
+			CYy9rWxGTGZA959iOveiSRO1b25U/HteiaCLs/EJ/M8=
 			</data>
 		</dict>
 		<key>Frameworks/libswiftCore.dylib</key>
@@ -275,33 +287,66 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			ornqSkKpi4Ht9z/EZKk0ptQmBGM=
+			ckOm4M6PpV0EbVTjYV+f2OnJPHw=
 			</data>
 			<key>hash2</key>
 			<data>
-			8XWndMykcLoy11j+CRIml/SUIydm46fp5QkqwfkQjnk=
+			uuOjWoLEr+wfcK0fqkXkeGShKGETIVWgsBLBBecEwxg=
 			</data>
 		</dict>
 		<key>Main.storyboardc/Info.plist</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			m8pXfsx1r3sUyZ9iNJ3sHj0t6Zg=
+			difQRzH6OJ0rgKYIvgdSAGPwt/I=
 			</data>
 			<key>hash2</key>
 			<data>
-			ZbKaOGEoHkjo0Q107oGpIUmbgH6nhaxPoddJyvJht0Y=
+			xy3s3VLyal3AhKLhC/4udkGEGr1+78pOThJOFZnhBPE=
 			</data>
 		</dict>
-		<key>Main.storyboardc/UIViewController-ChL-pp-xaK.nib</key>
+		<key>Main.storyboardc/UINavigationController-r6c-hl-uPU.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			5qeZrdAr8TVPwsfejZzx5qDuYWU=
+			PpNGtvpV1Dv7rJ5lH6vipE6MmAk=
 			</data>
 			<key>hash2</key>
 			<data>
-			G+xqTJ2a0A/Q7u94yJhkqJU8kiEAGiL+LEuQrgPZL4E=
+			ZxC7xk5fNVJPTU2AvCIqOaioPOwFUYZPo8TyGtis+EM=
+			</data>
+		</dict>
+		<key>WeekViewController.storyboardc/Info.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			se9Re94J3qVm2SUFks284U3iFn8=
+			</data>
+			<key>hash2</key>
+			<data>
+			U1KMFC+xxM/gwTQQT/OcXxz3VGESZu7XQm7fTM0UwE8=
+			</data>
+		</dict>
+		<key>WeekViewController.storyboardc/N9m-Px-uO7-view-ZhL-Bc-fCL.nib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			pRVNre7DgXGyWi9LQ0kfUf8xrrA=
+			</data>
+			<key>hash2</key>
+			<data>
+			QW4oSwakDhbUPu1uMSSj2nl0jw2YUPd9PyCwiwEwUg4=
+			</data>
+		</dict>
+		<key>WeekViewController.storyboardc/WeekViewController.nib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			mCjPrjWBtqXR5Db6WEyZu1YxNms=
+			</data>
+			<key>hash2</key>
+			<data>
+			vr4JeY9SK/+C04jBs6Zo6XOHhOZ1Va4r6c5FcUK0GMg=
 			</data>
 		</dict>
 		<key>libswiftRemoteMirror.dylib</key>
