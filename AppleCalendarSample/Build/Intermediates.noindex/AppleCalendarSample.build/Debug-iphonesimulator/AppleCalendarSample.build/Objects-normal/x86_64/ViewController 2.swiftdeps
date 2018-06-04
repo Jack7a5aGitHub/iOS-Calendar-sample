@@ -14,7 +14,6 @@ provides-dynamic-lookup:
 - "viewDidLoad"
 depends-top-level:
 - !private "*"
-- !private "+"
 - !private "-"
 - !private "/"
 - "AssignmentPrecedence"
@@ -211,6 +210,7 @@ depends-member:
 - !private ["s29CustomPlaygroundQuickLookableP", "width"]
 - !private ["s17CustomReflectableP", "_getBuiltinLogicValue"]
 - !private ["s17CustomReflectableP", "current"]
+- !private ["s17CustomReflectableP", "date"]
 - !private ["s17CustomReflectableP", "dateComponents"]
 - !private ["s17CustomReflectableP", "init"]
 - !private ["s17CustomReflectableP", "monthAgeDate"]
@@ -289,8 +289,10 @@ depends-member:
 - !private ["10Foundation4DateV", "monthAgeDate"]
 - !private ["10Foundation4DateV", "monthLaterDate"]
 - !private ["10Foundation4DateV", "toStr"]
+- !private ["10Foundation14DateComponentsV", "date"]
 - !private ["s9DecodableP", "_getBuiltinLogicValue"]
 - !private ["s9DecodableP", "current"]
+- !private ["s9DecodableP", "date"]
 - !private ["s9DecodableP", "dateComponents"]
 - !private ["s9DecodableP", "init"]
 - !private ["s9DecodableP", "monthAgeDate"]
@@ -301,6 +303,7 @@ depends-member:
 - !private ["s9DecodableP", "width"]
 - !private ["s9EncodableP", "_getBuiltinLogicValue"]
 - !private ["s9EncodableP", "current"]
+- !private ["s9EncodableP", "date"]
 - !private ["s9EncodableP", "dateComponents"]
 - !private ["s9EncodableP", "init"]
 - !private ["s9EncodableP", "monthAgeDate"]
@@ -467,6 +470,7 @@ depends-member:
 - !private ["19AppleCalendarSample5ModelC", "checkTheDateInMonth"]
 - !private ["19AppleCalendarSample5ModelC", "checkWeekend"]
 - !private ["19AppleCalendarSample5ModelC", "dateForCellAtIndexPath"]
+- !private ["19AppleCalendarSample5ModelC", "firstDateOfMonth"]
 - ["19AppleCalendarSample5ModelC", "init"]
 - !private ["19AppleCalendarSample5ModelC", "selectedDate"]
 - !private ["19AppleCalendarSample9MonthCellC", "date"]
@@ -723,6 +727,7 @@ depends-member:
 - !private ["s22RandomAccessCollectionP", "row"]
 - !private ["s26RangeReplaceableCollectionP", "init"]
 - !private ["10Foundation20ReferenceConvertibleP", "current"]
+- !private ["10Foundation20ReferenceConvertibleP", "date"]
 - !private ["10Foundation20ReferenceConvertibleP", "dateComponents"]
 - !private ["10Foundation20ReferenceConvertibleP", "init"]
 - !private ["10Foundation20ReferenceConvertibleP", "monthAgeDate"]
@@ -738,7 +743,7 @@ depends-member:
 - !private ["s14StringProtocolP", "init"]
 - !private ["s16TextOutputStreamP", "init"]
 - !private ["s20TextOutputStreamableP", "init"]
-- !private ["10Foundation8TimeZoneV", "current"]
+- !private ["10Foundation8TimeZoneV", "init"]
 - !private ["So29UIAccessibilityIdentificationP", "cellForItem"]
 - !private ["So29UIAccessibilityIdentificationP", "dataSource"]
 - !private ["So29UIAccessibilityIdentificationP", "date"]
@@ -843,6 +848,7 @@ depends-member:
 - ["So26UICollectionViewDataSourceP", "indexPathForPreferredFocusedViewInCollectionView"]
 - ["So26UICollectionViewDataSourceP", "indexTitles"]
 - ["So26UICollectionViewDataSourceP", "indexTitlesForCollectionView"]
+- !private ["So26UICollectionViewDataSourceP", "make"]
 - !private ["So26UICollectionViewDataSourceP", "model"]
 - !private ["So26UICollectionViewDataSourceP", "navigationController"]
 - ["So26UICollectionViewDataSourceP", "numberOfSections"]
@@ -884,6 +890,7 @@ depends-member:
 - ["So24UICollectionViewDelegateP", "indexPathForPreferredFocusedViewInCollectionView"]
 - ["So24UICollectionViewDelegateP", "indexTitles"]
 - ["So24UICollectionViewDelegateP", "indexTitlesForCollectionView"]
+- !private ["So24UICollectionViewDelegateP", "make"]
 - !private ["So24UICollectionViewDelegateP", "model"]
 - !private ["So24UICollectionViewDelegateP", "navigationController"]
 - ["So24UICollectionViewDelegateP", "numberOfSections"]
@@ -925,6 +932,7 @@ depends-member:
 - ["So34UICollectionViewDelegateFlowLayoutP", "indexPathForPreferredFocusedViewInCollectionView"]
 - ["So34UICollectionViewDelegateFlowLayoutP", "indexTitles"]
 - ["So34UICollectionViewDelegateFlowLayoutP", "indexTitlesForCollectionView"]
+- !private ["So34UICollectionViewDelegateFlowLayoutP", "make"]
 - !private ["So34UICollectionViewDelegateFlowLayoutP", "model"]
 - !private ["So34UICollectionViewDelegateFlowLayoutP", "navigationController"]
 - ["So34UICollectionViewDelegateFlowLayoutP", "numberOfSections"]
@@ -1291,6 +1299,7 @@ depends-member:
 - ["So20UIScrollViewDelegateP", "indexPathForPreferredFocusedViewInCollectionView"]
 - ["So20UIScrollViewDelegateP", "indexTitles"]
 - ["So20UIScrollViewDelegateP", "indexTitlesForCollectionView"]
+- !private ["So20UIScrollViewDelegateP", "make"]
 - !private ["So20UIScrollViewDelegateP", "model"]
 - !private ["So20UIScrollViewDelegateP", "navigationController"]
 - ["So20UIScrollViewDelegateP", "numberOfSections"]
@@ -1487,7 +1496,7 @@ depends-member:
 - ["19AppleCalendarSample14ViewControllerC", "CGFloat"]
 - ["19AppleCalendarSample14ViewControllerC", "CGSize"]
 - !private ["19AppleCalendarSample14ViewControllerC", "Calendar"]
-- ["19AppleCalendarSample14ViewControllerC", "CellMargin"]
+- !private ["19AppleCalendarSample14ViewControllerC", "CellMargin"]
 - !private ["19AppleCalendarSample14ViewControllerC", "Date"]
 - ["19AppleCalendarSample14ViewControllerC", "IndexPath"]
 - ["19AppleCalendarSample14ViewControllerC", "Int"]
@@ -1503,7 +1512,7 @@ depends-member:
 - !private ["19AppleCalendarSample14ViewControllerC", "WeekViewController"]
 - ["19AppleCalendarSample14ViewControllerC", "calendarView"]
 - ["19AppleCalendarSample14ViewControllerC", "collectionView"]
-- ["19AppleCalendarSample14ViewControllerC", "dateCount"]
+- !private ["19AppleCalendarSample14ViewControllerC", "dateCount"]
 - ["19AppleCalendarSample14ViewControllerC", "dateLabel"]
 - ["19AppleCalendarSample14ViewControllerC", "deinit"]
 - !private ["19AppleCalendarSample14ViewControllerC", "fatalError"]
@@ -1512,7 +1521,7 @@ depends-member:
 - ["19AppleCalendarSample14ViewControllerC", "indexTitles"]
 - ["19AppleCalendarSample14ViewControllerC", "indexTitlesForCollectionView"]
 - ["19AppleCalendarSample14ViewControllerC", "init"]
-- ["19AppleCalendarSample14ViewControllerC", "model"]
+- !private ["19AppleCalendarSample14ViewControllerC", "model"]
 - !private ["19AppleCalendarSample14ViewControllerC", "navigationController"]
 - ["19AppleCalendarSample14ViewControllerC", "nextMonth"]
 - ["19AppleCalendarSample14ViewControllerC", "numberOfSections"]
@@ -1620,11 +1629,13 @@ depends-member:
 - ["10Foundation27_KeyValueCodingAndObservingP", "viewForZooming"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "viewForZoomingInScrollView"]
 - !private ["10Foundation14_MutableBoxingP", "current"]
+- !private ["10Foundation14_MutableBoxingP", "date"]
 - !private ["10Foundation14_MutableBoxingP", "dateComponents"]
 - !private ["s21_ObjectiveCBridgeableP", "_getBuiltinLogicValue"]
 - !private ["s21_ObjectiveCBridgeableP", "black"]
 - !private ["s21_ObjectiveCBridgeableP", "blue"]
 - !private ["s21_ObjectiveCBridgeableP", "current"]
+- !private ["s21_ObjectiveCBridgeableP", "date"]
 - !private ["s21_ObjectiveCBridgeableP", "dateComponents"]
 - !private ["s21_ObjectiveCBridgeableP", "gray"]
 - !private ["s21_ObjectiveCBridgeableP", "init"]
@@ -1653,6 +1664,7 @@ depends-nominal:
 - !private "s17CustomReflectableP"
 - "s23CustomStringConvertibleP"
 - !private "10Foundation4DateV"
+- !private "10Foundation14DateComponentsV"
 - !private "s9DecodableP"
 - !private "s9EncodableP"
 - "s9EquatableP"
@@ -1764,4 +1776,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
-interface-hash: "4b1ba0d1e60c4f387338b5ab6cb65b04"
+interface-hash: "0867f8f0e011b499c194d48992bb353d"

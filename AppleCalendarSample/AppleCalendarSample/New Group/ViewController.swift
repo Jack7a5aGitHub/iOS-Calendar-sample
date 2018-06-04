@@ -15,9 +15,9 @@ final class ViewController: UIViewController {
     @IBOutlet weak var calendarView: UICollectionView!
     
     //MARk: -Properties
-    let model = Model()
-    let CellMargin = 2.0
-    var dateCount = 0
+    private let model = Model()
+    private let CellMargin = 2.0
+    private var dateCount = 0
     
     //MARK; -LifeCycle
     override func viewDidLoad() {
@@ -58,7 +58,9 @@ extension ViewController {
     }
     private func setupModel() {
         let jpt = Calendar.current.dateComponents(in: TimeZone(identifier: "Asia/Tokyo")!, from: Date())
+        
         print("Japan Time: \(jpt)")
+        //効いてない date = GMT + 0 . JPT should be GMT + 9
         model.selectedDate = jpt.date!
         dateCount = model.calculationNumberOfItems()
         dateLabel.text = model.selectedDate.toStr(dateFormat: "yyyy/MM")
@@ -75,8 +77,8 @@ extension ViewController: UICollectionViewDataSource {
             fatalError()
         }
        
-        let date = model.dateForCellAtIndexPath(indexPathItem: indexPath.row)
-        cell.date = model.dateForCellAtIndexPath(indexPathItem: indexPath.row + 1)
+        let date = model.dateForCellAtIndexPath(date: model.firstDateOfMonth(date: model.selectedDate),indexPathItem: indexPath.row)
+        cell.date = model.dateForCellAtIndexPath(date: model.firstDateOfMonth(date: model.selectedDate),indexPathItem: indexPath.row )
         cell.label.text = date.toStr(dateFormat: "d")
         cell.label.textColor = model.checkTheDateInMonth(date: date) ? .black : .gray
         if (model.checkTheDateInMonth(date: date)) {
@@ -100,9 +102,7 @@ extension ViewController: UICollectionViewDelegate {
               let selectedDate = cell.date  else {
             return
         }
-        
-        print(cell.label.text)
-        print(selectedDate)
+
         let weekVC = WeekViewController.make(with: selectedDate)
         self.navigationController?.pushViewController(weekVC, animated: true)
     }

@@ -14,7 +14,6 @@ provides-dynamic-lookup:
 - "viewDidLoad"
 depends-top-level:
 - !private "*"
-- !private "+"
 - !private "-"
 - !private "/"
 - "AssignmentPrecedence"
@@ -471,6 +470,7 @@ depends-member:
 - !private ["19AppleCalendarSample5ModelC", "checkTheDateInMonth"]
 - !private ["19AppleCalendarSample5ModelC", "checkWeekend"]
 - !private ["19AppleCalendarSample5ModelC", "dateForCellAtIndexPath"]
+- !private ["19AppleCalendarSample5ModelC", "firstDateOfMonth"]
 - ["19AppleCalendarSample5ModelC", "init"]
 - !private ["19AppleCalendarSample5ModelC", "selectedDate"]
 - !private ["19AppleCalendarSample9MonthCellC", "date"]
@@ -848,6 +848,7 @@ depends-member:
 - ["So26UICollectionViewDataSourceP", "indexPathForPreferredFocusedViewInCollectionView"]
 - ["So26UICollectionViewDataSourceP", "indexTitles"]
 - ["So26UICollectionViewDataSourceP", "indexTitlesForCollectionView"]
+- !private ["So26UICollectionViewDataSourceP", "make"]
 - !private ["So26UICollectionViewDataSourceP", "model"]
 - !private ["So26UICollectionViewDataSourceP", "navigationController"]
 - ["So26UICollectionViewDataSourceP", "numberOfSections"]
@@ -889,6 +890,7 @@ depends-member:
 - ["So24UICollectionViewDelegateP", "indexPathForPreferredFocusedViewInCollectionView"]
 - ["So24UICollectionViewDelegateP", "indexTitles"]
 - ["So24UICollectionViewDelegateP", "indexTitlesForCollectionView"]
+- !private ["So24UICollectionViewDelegateP", "make"]
 - !private ["So24UICollectionViewDelegateP", "model"]
 - !private ["So24UICollectionViewDelegateP", "navigationController"]
 - ["So24UICollectionViewDelegateP", "numberOfSections"]
@@ -930,6 +932,7 @@ depends-member:
 - ["So34UICollectionViewDelegateFlowLayoutP", "indexPathForPreferredFocusedViewInCollectionView"]
 - ["So34UICollectionViewDelegateFlowLayoutP", "indexTitles"]
 - ["So34UICollectionViewDelegateFlowLayoutP", "indexTitlesForCollectionView"]
+- !private ["So34UICollectionViewDelegateFlowLayoutP", "make"]
 - !private ["So34UICollectionViewDelegateFlowLayoutP", "model"]
 - !private ["So34UICollectionViewDelegateFlowLayoutP", "navigationController"]
 - ["So34UICollectionViewDelegateFlowLayoutP", "numberOfSections"]
@@ -1296,6 +1299,7 @@ depends-member:
 - ["So20UIScrollViewDelegateP", "indexPathForPreferredFocusedViewInCollectionView"]
 - ["So20UIScrollViewDelegateP", "indexTitles"]
 - ["So20UIScrollViewDelegateP", "indexTitlesForCollectionView"]
+- !private ["So20UIScrollViewDelegateP", "make"]
 - !private ["So20UIScrollViewDelegateP", "model"]
 - !private ["So20UIScrollViewDelegateP", "navigationController"]
 - ["So20UIScrollViewDelegateP", "numberOfSections"]
@@ -1492,7 +1496,7 @@ depends-member:
 - ["19AppleCalendarSample14ViewControllerC", "CGFloat"]
 - ["19AppleCalendarSample14ViewControllerC", "CGSize"]
 - !private ["19AppleCalendarSample14ViewControllerC", "Calendar"]
-- ["19AppleCalendarSample14ViewControllerC", "CellMargin"]
+- !private ["19AppleCalendarSample14ViewControllerC", "CellMargin"]
 - !private ["19AppleCalendarSample14ViewControllerC", "Date"]
 - ["19AppleCalendarSample14ViewControllerC", "IndexPath"]
 - ["19AppleCalendarSample14ViewControllerC", "Int"]
@@ -1508,7 +1512,7 @@ depends-member:
 - !private ["19AppleCalendarSample14ViewControllerC", "WeekViewController"]
 - ["19AppleCalendarSample14ViewControllerC", "calendarView"]
 - ["19AppleCalendarSample14ViewControllerC", "collectionView"]
-- ["19AppleCalendarSample14ViewControllerC", "dateCount"]
+- !private ["19AppleCalendarSample14ViewControllerC", "dateCount"]
 - ["19AppleCalendarSample14ViewControllerC", "dateLabel"]
 - ["19AppleCalendarSample14ViewControllerC", "deinit"]
 - !private ["19AppleCalendarSample14ViewControllerC", "fatalError"]
@@ -1517,7 +1521,7 @@ depends-member:
 - ["19AppleCalendarSample14ViewControllerC", "indexTitles"]
 - ["19AppleCalendarSample14ViewControllerC", "indexTitlesForCollectionView"]
 - ["19AppleCalendarSample14ViewControllerC", "init"]
-- ["19AppleCalendarSample14ViewControllerC", "model"]
+- !private ["19AppleCalendarSample14ViewControllerC", "model"]
 - !private ["19AppleCalendarSample14ViewControllerC", "navigationController"]
 - ["19AppleCalendarSample14ViewControllerC", "nextMonth"]
 - ["19AppleCalendarSample14ViewControllerC", "numberOfSections"]
@@ -1772,4 +1776,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
-interface-hash: "4b1ba0d1e60c4f387338b5ab6cb65b04"
+interface-hash: "0867f8f0e011b499c194d48992bb353d"

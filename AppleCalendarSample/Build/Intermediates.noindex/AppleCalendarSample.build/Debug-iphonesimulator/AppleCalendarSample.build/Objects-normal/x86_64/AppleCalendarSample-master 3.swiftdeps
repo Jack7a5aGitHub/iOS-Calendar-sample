@@ -1,13 +1,14 @@
 version: "Apple Swift version 4.1 (swiftlang-902.0.48 clang-902.0.37.1)"
 options: "a3e070f5798d35a4ff0792bf1c37cda2"
-build_time: [1528080636, 292559000]
+build_time: [1528095432, 754966000]
 inputs:
   "/Users/jackwong/Desktop/Developer/AppleCalendarSample/AppleCalendarSample/Extension/UIStoryboard+Instance.swift": [1528074680, 0]
   "/Users/jackwong/Desktop/Developer/MonthCell.swift": [1528079678, 0]
-  "/Users/jackwong/Desktop/Developer/Model.swift": [1527843685, 0]
-  "/Users/jackwong/Desktop/Developer/Date+prevAndNext.swift": [1527838077, 0]
+  "/Users/jackwong/Desktop/Developer/Model.swift": [1528092008, 0]
+  "/Users/jackwong/Desktop/Developer/Date+prevAndNext.swift": [1528094533, 0]
   "/Users/jackwong/Desktop/Developer/AppleCalendarSample/AppleCalendarSample/Extension/Date+toString.swift": [1527844791, 0]
   "/Users/jackwong/Desktop/Developer/AppleCalendarSample/AppleCalendarSample/Extension/NSObject+ClassName.swift": [1528074683, 0]
-  "/Users/jackwong/Desktop/Developer/AppleCalendarSample/AppleCalendarSample/ViewController/WeekViewController.swift": [1528079918, 0]
-  "/Users/jackwong/Desktop/Developer/AppleCalendarSample/AppleCalendarSample/New Group/ViewController.swift": [1528080635, 0]
+  "/Users/jackwong/Desktop/Developer/AppleCalendarSample/AppleCalendarSample/ViewController/WeekViewController.swift": [1528095352, 0]
+  "/Users/jackwong/Desktop/Developer/AppleCalendarSample/AppleCalendarSample/View/WeekCell.swift": [1528089093, 0]
+  "/Users/jackwong/Desktop/Developer/AppleCalendarSample/AppleCalendarSample/New Group/ViewController.swift": [1528095432, 0]
   "/Users/jackwong/Desktop/Developer/AppleCalendarSample/AppleCalendarSample/AppDelegate.swift": [1527830595, 0]
