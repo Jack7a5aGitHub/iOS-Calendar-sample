@@ -15,6 +15,7 @@
 		0A31FCEE20C52158009D1AEC /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A31FCED20C52157009D1AEC /* Model.swift */; };
 		0A31FCF020C52176009D1AEC /* Date+prevAndNext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A31FCEF20C52176009D1AEC /* Date+prevAndNext.swift */; };
 		0A31FCF220C5218B009D1AEC /* MonthCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A31FCF120C5218B009D1AEC /* MonthCell.swift */; };
+		0A31FCF420C52AAE009D1AEC /* ScheduleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A31FCF320C52AAE009D1AEC /* ScheduleCell.swift */; };
 		0A57C33720C10FC300660A40 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A57C33620C10FC300660A40 /* AppDelegate.swift */; };
 		0A57C33920C10FC300660A40 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A57C33820C10FC300660A40 /* ViewController.swift */; };
 		0A57C33E20C10FC600660A40 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A57C33D20C10FC600660A40 /* Assets.xcassets */; };
@@ -32,6 +33,7 @@
 		0A31FCED20C52157009D1AEC /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		0A31FCEF20C52176009D1AEC /* Date+prevAndNext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+prevAndNext.swift"; sourceTree = "<group>"; };
 		0A31FCF120C5218B009D1AEC /* MonthCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MonthCell.swift; sourceTree = "<group>"; };
+		0A31FCF320C52AAE009D1AEC /* ScheduleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleCell.swift; sourceTree = "<group>"; };
 		0A57C33320C10FC300660A40 /* AppleCalendarSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppleCalendarSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A57C33620C10FC300660A40 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0A57C33820C10FC300660A40 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = "../New Group/ViewController.swift"; sourceTree = "<group>"; };
@@ -119,6 +121,7 @@
 			children = (
 				0A31FCF120C5218B009D1AEC /* MonthCell.swift */,
 				0A31FCEB20C4FDDD009D1AEC /* WeekCell.swift */,
+				0A31FCF320C52AAE009D1AEC /* ScheduleCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -204,6 +207,7 @@
 				0A31FCEC20C4FDDE009D1AEC /* WeekCell.swift in Sources */,
 				0A31FCEE20C52158009D1AEC /* Model.swift in Sources */,
 				0A57C33920C10FC300660A40 /* ViewController.swift in Sources */,
+				0A31FCF420C52AAE009D1AEC /* ScheduleCell.swift in Sources */,
 				0A57C33720C10FC300660A40 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

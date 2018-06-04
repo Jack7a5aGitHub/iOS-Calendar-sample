@@ -20,6 +20,8 @@ final class WeekViewController: UIViewController {
     private let model = Model()
     private var dayCount = 0
     private let CellMargin = 2.0
+    private let timeArray = ["0:00","1:00","2:00","3:00","4:00","5:00","6:00","7:00","8:00","9:00","10:00","11:00","12:00","13:00","14:00","15:00","16:00","17:00","18:00","19:00","20:00","21:00","22:00","23:00"]
+    
     
     //MARK: -Factory
     class func make(with date: Date) -> WeekViewController {
@@ -36,6 +38,7 @@ final class WeekViewController: UIViewController {
     override func viewDidLoad() {
         setupWeekVCModel()
         setupWeekCollectionView()
+        setupScheduleTableView()
     }
 }
 
@@ -52,6 +55,10 @@ extension WeekViewController {
     private func setupWeekCollectionView(){
         weekCollectionView.dataSource = self
         weekCollectionView.delegate = self
+    }
+    private func setupScheduleTableView(){
+        scheduleTableView.dataSource = self
+        scheduleTableView.delegate = self
     }
 }
     //MARK: - UICollectionViewDelegate
@@ -100,6 +107,25 @@ extension WeekViewController: UICollectionViewDelegateFlowLayout {
     }
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
         return CGFloat(CellMargin)
+    }
+}
+
+//MARK: - UITableViewDelegate
+extension WeekViewController: UITableViewDelegate {
+    
+}
+
+//MARK: - UITableViewDelegate
+extension WeekViewController: UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return timeArray.count
+    }
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "scheduleCell", for: indexPath) as? ScheduleCell else {
+            fatalError()
+        }
+        cell.timeLabel.text = timeArray[indexPath.row]
+        return cell
     }
 }
 
