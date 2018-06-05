@@ -20,6 +20,9 @@
 		0A57C33920C10FC300660A40 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A57C33820C10FC300660A40 /* ViewController.swift */; };
 		0A57C33E20C10FC600660A40 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A57C33D20C10FC600660A40 /* Assets.xcassets */; };
 		0A57C34120C10FC600660A40 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A57C33F20C10FC600660A40 /* LaunchScreen.storyboard */; };
+		0A6170AF20C64A9F00FF2AB7 /* ScheduleCollectionProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A6170AE20C64A9F00FF2AB7 /* ScheduleCollectionProvider.swift */; };
+		0A6170B120C64DC800FF2AB7 /* TimeTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A6170B020C64DC800FF2AB7 /* TimeTableCell.swift */; };
+		0A6170B320C66B5100FF2AB7 /* TimeTableProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A6170B220C66B5100FF2AB7 /* TimeTableProvider.swift */; };
 		0A84F57220C1377B00D1F41C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A84F57120C1377B00D1F41C /* Main.storyboard */; };
 		0A84F57420C1466A00D1F41C /* Date+toString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A84F57320C1466A00D1F41C /* Date+toString.swift */; };
 /* End PBXBuildFile section */
@@ -40,6 +43,9 @@
 		0A57C33D20C10FC600660A40 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0A57C34020C10FC600660A40 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0A57C34220C10FC600660A40 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0A6170AE20C64A9F00FF2AB7 /* ScheduleCollectionProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleCollectionProvider.swift; sourceTree = "<group>"; };
+		0A6170B020C64DC800FF2AB7 /* TimeTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeTableCell.swift; sourceTree = "<group>"; };
+		0A6170B220C66B5100FF2AB7 /* TimeTableProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeTableProvider.swift; sourceTree = "<group>"; };
 		0A84F57120C1377B00D1F41C /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		0A84F57320C1466A00D1F41C /* Date+toString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+toString.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -122,6 +128,9 @@
 				0A31FCF120C5218B009D1AEC /* MonthCell.swift */,
 				0A31FCEB20C4FDDD009D1AEC /* WeekCell.swift */,
 				0A31FCF320C52AAE009D1AEC /* ScheduleCell.swift */,
+				0A6170AE20C64A9F00FF2AB7 /* ScheduleCollectionProvider.swift */,
+				0A6170B020C64DC800FF2AB7 /* TimeTableCell.swift */,
+				0A6170B220C66B5100FF2AB7 /* TimeTableProvider.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -198,8 +207,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A6170AF20C64A9F00FF2AB7 /* ScheduleCollectionProvider.swift in Sources */,
 				0A31FCF220C5218B009D1AEC /* MonthCell.swift in Sources */,
+				0A6170B320C66B5100FF2AB7 /* TimeTableProvider.swift in Sources */,
 				0A31FCF020C52176009D1AEC /* Date+prevAndNext.swift in Sources */,
+				0A6170B120C64DC800FF2AB7 /* TimeTableCell.swift in Sources */,
 				0A31FCE420C4C919009D1AEC /* UIStoryboard+Instance.swift in Sources */,
 				0A84F57420C1466A00D1F41C /* Date+toString.swift in Sources */,
 				0A31FCE620C4C937009D1AEC /* NSObject+ClassName.swift in Sources */,

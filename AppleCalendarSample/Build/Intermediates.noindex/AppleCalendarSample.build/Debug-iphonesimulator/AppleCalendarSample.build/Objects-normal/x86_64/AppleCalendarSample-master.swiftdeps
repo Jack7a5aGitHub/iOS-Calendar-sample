@@ -1,15 +1,18 @@
 version: "Apple Swift version 4.1 (swiftlang-902.0.48 clang-902.0.37.1)"
 options: "a3e070f5798d35a4ff0792bf1c37cda2"
-build_time: [1528105376, 134745000]
+build_time: [1528190016, 123550000]
 inputs:
+  "/Users/jackwong/Desktop/Developer/AppleCalendarSample/AppleCalendarSample/View/ScheduleCollectionProvider.swift": [1528187387, 0]
   "/Users/jackwong/Desktop/Developer/AppleCalendarSample/AppleCalendarSample/View/MonthCell.swift": [1528079678, 0]
+  "/Users/jackwong/Desktop/Developer/AppleCalendarSample/AppleCalendarSample/View/TimeTableProvider.swift": [1528186347, 0]
   "/Users/jackwong/Desktop/Developer/AppleCalendarSample/AppleCalendarSample/Extension/Date+prevAndNext.swift": [1528094533, 0]
+  "/Users/jackwong/Desktop/Developer/AppleCalendarSample/AppleCalendarSample/View/TimeTableCell.swift": [1528186980, 0]
   "/Users/jackwong/Desktop/Developer/AppleCalendarSample/AppleCalendarSample/Extension/UIStoryboard+Instance.swift": [1528074680, 0]
   "/Users/jackwong/Desktop/Developer/AppleCalendarSample/AppleCalendarSample/Extension/Date+toString.swift": [1527844791, 0]
   "/Users/jackwong/Desktop/Developer/AppleCalendarSample/AppleCalendarSample/Extension/NSObject+ClassName.swift": [1528074683, 0]
-  "/Users/jackwong/Desktop/Developer/AppleCalendarSample/AppleCalendarSample/ViewController/WeekViewController.swift": [1528105375, 0]
+  "/Users/jackwong/Desktop/Developer/AppleCalendarSample/AppleCalendarSample/ViewController/WeekViewController.swift": [1528190015, 0]
   "/Users/jackwong/Desktop/Developer/AppleCalendarSample/AppleCalendarSample/View/WeekCell.swift": [1528104967, 0]
   "/Users/jackwong/Desktop/Developer/AppleCalendarSample/AppleCalendarSample/Model/Model.swift": [1528095827, 0]
   "/Users/jackwong/Desktop/Developer/AppleCalendarSample/AppleCalendarSample/New Group/ViewController.swift": [1528096269, 0]
-  "/Users/jackwong/Desktop/Developer/AppleCalendarSample/AppleCalendarSample/View/ScheduleCell.swift": [1528100843, 0]
+  "/Users/jackwong/Desktop/Developer/AppleCalendarSample/AppleCalendarSample/View/ScheduleCell.swift": [1528188519, 0]
   "/Users/jackwong/Desktop/Developer/AppleCalendarSample/AppleCalendarSample/AppDelegate.swift": [1527830595, 0]

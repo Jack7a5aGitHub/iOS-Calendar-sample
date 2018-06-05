@@ -211,21 +211,56 @@ SWIFT_CLASS("_TtC19AppleCalendarSample9MonthCell")
 
 
 
-@class UIButton;
+@class UITableView;
 
 SWIFT_CLASS("_TtC19AppleCalendarSample12ScheduleCell")
-@interface ScheduleCell : UITableViewCell
-@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified timeLabel;
-@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified statusLabel;
-@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified reserveButton;
+@interface ScheduleCell : UICollectionViewCell
+@property (nonatomic, weak) IBOutlet UITableView * _Null_unspecified timeTableView;
 - (void)awakeFromNib;
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+@interface ScheduleCell (SWIFT_EXTENSION(AppleCalendarSample)) <UITableViewDelegate>
+- (void)tableView:(UITableView * _Nonnull)tableView didSelectRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
+@end
+
+
+SWIFT_CLASS("_TtC19AppleCalendarSample26ScheduleCollectionProvider")
+@interface ScheduleCollectionProvider : NSObject
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class UICollectionView;
+
+@interface ScheduleCollectionProvider (SWIFT_EXTENSION(AppleCalendarSample)) <UICollectionViewDataSource>
+- (NSInteger)collectionView:(UICollectionView * _Nonnull)collectionView numberOfItemsInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
+- (UICollectionViewCell * _Nonnull)collectionView:(UICollectionView * _Nonnull)collectionView cellForItemAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
+@end
+
+
+SWIFT_CLASS("_TtC19AppleCalendarSample13TimeTableCell")
+@interface TimeTableCell : UITableViewCell
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified timeLabel;
 - (nonnull instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString * _Nullable)reuseIdentifier OBJC_DESIGNATED_INITIALIZER SWIFT_AVAILABILITY(ios,introduced=3.0);
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
 
+SWIFT_CLASS("_TtC19AppleCalendarSample17TimeTableProvider")
+@interface TimeTableProvider : NSObject
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
 
-@class UICollectionView;
+
+@interface TimeTableProvider (SWIFT_EXTENSION(AppleCalendarSample)) <UITableViewDataSource>
+- (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
+- (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
+@end
+
+
+
 @class NSBundle;
 
 SWIFT_CLASS("_TtC19AppleCalendarSample14ViewController")
@@ -270,12 +305,11 @@ SWIFT_CLASS("_TtC19AppleCalendarSample8WeekCell")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class UITableView;
 
 SWIFT_CLASS("_TtC19AppleCalendarSample18WeekViewController")
 @interface WeekViewController : UIViewController
 @property (nonatomic, weak) IBOutlet UICollectionView * _Null_unspecified weekCollectionView;
-@property (nonatomic, weak) IBOutlet UITableView * _Null_unspecified scheduleTableView;
+@property (nonatomic, weak) IBOutlet UICollectionView * _Null_unspecified scheduleCollectionView;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified dateLabel;
 - (void)viewDidLoad;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
@@ -283,18 +317,8 @@ SWIFT_CLASS("_TtC19AppleCalendarSample18WeekViewController")
 @end
 
 
-@interface WeekViewController (SWIFT_EXTENSION(AppleCalendarSample)) <UITableViewDelegate>
-@end
-
-
 @interface WeekViewController (SWIFT_EXTENSION(AppleCalendarSample)) <UICollectionViewDelegate>
 - (void)collectionView:(UICollectionView * _Nonnull)collectionView didSelectItemAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
-@end
-
-
-@interface WeekViewController (SWIFT_EXTENSION(AppleCalendarSample)) <UITableViewDataSource>
-- (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
-- (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
 @end
 
 
@@ -304,13 +328,18 @@ SWIFT_CLASS("_TtC19AppleCalendarSample18WeekViewController")
 @end
 
 
-
-
 @interface WeekViewController (SWIFT_EXTENSION(AppleCalendarSample)) <UICollectionViewDelegateFlowLayout>
 - (CGSize)collectionView:(UICollectionView * _Nonnull)collectionView layout:(UICollectionViewLayout * _Nonnull)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
 - (UIEdgeInsets)collectionView:(UICollectionView * _Nonnull)collectionView layout:(UICollectionViewLayout * _Nonnull)collectionViewLayout insetForSectionAtIndex:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
 - (CGFloat)collectionView:(UICollectionView * _Nonnull)collectionView layout:(UICollectionViewLayout * _Nonnull)collectionViewLayout minimumLineSpacingForSectionAtIndex:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
 - (CGFloat)collectionView:(UICollectionView * _Nonnull)collectionView layout:(UICollectionViewLayout * _Nonnull)collectionViewLayout minimumInteritemSpacingForSectionAtIndex:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
+@end
+
+@class UIScrollView;
+
+@interface WeekViewController (SWIFT_EXTENSION(AppleCalendarSample))
+/// Horizontal CollectionView Swipeすると上のメニューをリンクする。
+- (void)scrollViewWillEndDragging:(UIScrollView * _Nonnull)scrollView withVelocity:(CGPoint)velocity targetContentOffset:(CGPoint * _Nonnull)targetContentOffset;
 @end
 
 #if __has_attribute(external_source_symbol)
